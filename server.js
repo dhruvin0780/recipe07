@@ -20,11 +20,13 @@ app.use(cors(corsOptions)); // Use this after the variable declaration
 // 	useUnifiedTopology: true,
 // });
 const { MongoClient, ServerApiVersion } = require("mongodb");
-
+const URL =
+	"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/myapp?retryWrites=true&w=majority";
 mongoose
 	.connect(
+		URL,
 		// "mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/myapp?retryWrites=true&w=majority",
-		"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/",
+		// "mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/",
 		// {
 		// 	serverApi: {
 		// 		version: ServerApiVersion.v1,
