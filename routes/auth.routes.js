@@ -135,4 +135,31 @@ router.patch("/", async (req, res) => {
 	}
 });
 
+//get
+router.get("/dhruvin", async (req, res) => {
+	try {
+		// const token = req.headers.authorization;
+		// console.log("TOKEN------->>", token);
+
+		// if (!token) {
+		// 	return res.status(401).json({
+		// 		error: true,
+		// 		message: "Access-token is missing...!!!",
+		// 	});
+		// }
+		// const decodeToken = await JWT.decodeToken(token);
+		// console.log("-------->>>", decodeToken);
+
+		// const user = await User.findOne({
+		// 	email: decodeToken.email,
+		// });
+		// console.log("-------->>", user);
+		const user = "dhruvin here!";
+		res.status(200).json({ user });
+	} catch (error) {
+		console.error(error);
+		res.status(500).json({ message: "An error occurred..." + error });
+	}
+});
+
 module.exports = router;
