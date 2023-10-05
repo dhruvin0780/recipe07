@@ -14,12 +14,22 @@ const corsOptions = {
 };
 app.use(cors(corsOptions)); // Use this after the variable declaration
 
-//mongo connection...
-mongoose.connect("mongodb://localhost:27017/myapp", {
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-});
+//mongo connection...hVnocblNCXUNjsiO///dhruvin07botify
+// mongoose.connect("mongodb://localhost:27017/myapp", {
+// 	useNewUrlParser: true,
+// 	useUnifiedTopology: true,
+// });
 
+mongoose
+	.connect(
+		"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/?retryWrites=true&w=majority",
+	)
+	.then(() => {
+		console.log("Connected to MongoDB");
+	})
+	.catch((err) => {
+		console.log(`Error connecting to MongoDB: ${err}`);
+	});
 app.use(express.json());
 
 // Use the routes
