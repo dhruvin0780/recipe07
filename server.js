@@ -19,11 +19,19 @@ app.use(cors(corsOptions)); // Use this after the variable declaration
 // 	useNewUrlParser: true,
 // 	useUnifiedTopology: true,
 // });
+const { MongoClient, ServerApiVersion } = require("mongodb");
 
 mongoose
 	.connect(
-		"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/myapp?retryWrites=true&w=majority",
-		// "mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/",
+		// "mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/myapp?retryWrites=true&w=majority",
+		"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/",
+		// {
+		// 	serverApi: {
+		// 		version: ServerApiVersion.v1,
+		// 		strict: true,
+		// 		deprecationErrors: true,
+		// 	},
+		// },
 	)
 	.then(() => {
 		console.log("Connected to MongoDB");
@@ -37,7 +45,7 @@ app.use(express.json());
 app.use("/auth", authRoutes);
 app.use("/recipes", recipeRoutes);
 
-const port = `0.0.0.0`;
+const port = 9000;
 
 app.listen(port, () => {
 	console.log(`Server is running on ${port}`);
