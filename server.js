@@ -21,7 +21,7 @@ app.use(cors(corsOptions)); // Use this after the variable declaration
 // });
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const URL =
-	"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/myapp?retryWrites=true&w=majority";
+	"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/";
 mongoose
 	.connect(
 		URL,
