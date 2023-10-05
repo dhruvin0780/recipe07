@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Manager</title>
+  <link rel="stylesheet" type="text/css" href="D:\clgs\e-comerce web\mini-project\recipe-management\recipe\styles.css">
+  <link rel="stylesheet" href="D:\clgs\e-comerce web\mini-project\recipe-management\me\style.css">
+</head>
+<body>  
+  <header>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="D:\clgs\e-comerce web\mini-project\recipe-management\homepage\index.html">Home</a>
+    <a href="D:\clgs\e-comerce web\mini-project\recipe-management\index.html">Recipes</a>
+    <a href="D:\clgs\e-comerce web\mini-project\recipe-management\aboutus\index.html">About</a>
+    <a href="D:\clgs\e-comerce web\mini-project\recipe-management\recipe\index.html">My-Recipes</a>
+    <div>
+      <br>
+      <button type="button" style="width: 35%; margin-left: 2.2em; background-color:rgb(255, 255, 255);" onclick="replaceToReg()">Reg.</button>
+      <button type="button" style="width: 35%; background-color: rgb(255, 255, 255);" onclick="replaceToLogin()">Log-in</button>
+    </div>
+  </div>
+  <span style="font-size:30px;cursor:pointer;color:rgb(255, 255, 255);" onclick="openNav()">
+    <div>
+      <img src="https://logos-world.net/wp-content/uploads/2023/04/Stoopid-Monkey-Logo.png" alt="Your Logo" width="220px" height="125px"/>
+    </div>
+  </span>
+  <button type="button" id="LOG-OUT-BTN" style="width: 10%; margin-left: 85em; background-color:white;">Log-Out</button>
+  </header>
+
+  <br>
+  <br>
+
+  <form id="add-recipe-form">
+    <br>
+    <h3>Add your secrete recipe✨🎁</h3>
+    <input type="text" id="recipe-title" placeholder="Recipe Title" required>
+    <textarea id="recipe-ingredients" placeholder="Ingredients" required></textarea>
+    <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+    <input type="text" id="imageUrl" placeholder="Recipe Image-Url" required>
+    
+    <br>
+    <button type="button" id="btn1" onclick="createRECEPIE()">Add Recipe</button>
+    <button type="button" id="btn2"onclick="updateRECEPIE()">Update Recipe</button>
+  <div>.</div>
+  </form>
+<br>
+  <h2 style="color:black; margin-left:2em; ">Your Recipe</h2>
+  <div id="recipe-list"></div>
+
+  <script src="script.js"></script>
+  <script src="D:\clgs\e-comerce web\mini-project\recipe-management\User\script.js"></script>
+  <script src="D:\clgs\e-comerce web\mini-project\recipe-management\me\script.js"></script>
+</body>
+</html>

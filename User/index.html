@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration and Login</title>
+  <link rel="stylesheet" type="text/css" href="D:\clgs\e-comerce web\mini-project\recipe-management\styles.css">
+  <link rel="stylesheet" href="D:\clgs\e-comerce web\mini-project\recipe-management\me\style.css">
+
+</head>
+<body>
+
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="D:\clgs\e-comerce web\mini-project\recipe-management\homepage\index.html">Home</a>
+      <a href="D:\clgs\e-comerce web\mini-project\recipe-management\index.html">Recipes</a>
+      <a href="D:\clgs\e-comerce web\mini-project\recipe-management\aboutus\index.html">About</a>
+      <a href="D:\clgs\e-comerce web\mini-project\recipe-management\recipe\index.html">My-Recipes</a>
+      <div>
+        <br>
+        <button id="REG" type="button" style="width: 35%; margin-left: 2.2em; background-color:rgb(255, 255, 255);" onclick="replaceToReg()">Reg.</button>
+        <button id="LOG-IN" type="button" style="width: 35%; background-color: rgb(255, 255, 255);" onclick="replaceToLogin()">Log-in</button>
+      </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer;color:rgb(255, 255, 255);" onclick="openNav()">
+      <div>
+        <img src="https://logos-world.net/wp-content/uploads/2023/04/Stoopid-Monkey-Logo.png" alt="Your Logo" width="220px" height="125px"/>
+      </div>
+    </span>
+  <a href="D:\clgs\e-comerce web\mini-project\recipe-management\homepage\index.html" style="margin-left: 75em; color: white;">BACK</a>
+  </header>
+
+  <br>
+  <br>
+
+<div class="row">
+  <div class="column">
+    <div class="card" style="background: #B4D0E7;">
+      <div class="container">
+        <form id="registration-form">
+          <h2>User Registration</h2>
+          <input type="text" id="username" placeholder="User-email" required>
+          <input type="password" id="password" placeholder="Password"required>
+          <button type="submit" style="background-color: #1c3334; color: white;">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+      <div class="card" style="background: #B4D0E7;">
+        <div class="container">
+          <form id="login-form">
+            <h2>User Login</h2>
+            <input type="text" id="login-username" placeholder="User-email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit" style="background-color: #1c3334; color: white;">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>  
+  <script src="script.js"></script>
+  <script src="D:\clgs\e-comerce web\mini-project\recipe-management\User\script.js"></script>
+  <script src="D:\clgs\e-comerce web\mini-project\recipe-management\me\script.js"></script>
+</body>
+</html>

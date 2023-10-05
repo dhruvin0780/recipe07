@@ -1,0 +1,125 @@
+body {
+  font-family: Verdana, sans-serif;    
+  margin: 5px;
+  justify-content: center;
+  /* background:linear-gradient(90deg,#101820 20%,#376e6f 20%); */
+
+  /* background:linear-gradient(90deg,#32657c 20%,#669bb7 20%); */
+  background:linear-gradient(90deg,#F0F0F0 20%, #E7473C 20%);
+
+}
+
+  header {
+    padding: 5px;
+    color: #4a171e;
+  }
+
+  a{
+    color:white;
+  }
+
+  nav{
+    background:aliceblue; 
+  }
+
+  nav ul {
+    list-style: none;
+    align-items: baseline; 
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+    list-style: none;
+    align-items: baseline;
+  }
+
+  nav ul li a {
+    list-style-type: circle;   
+  }
+  
+  main {
+    padding: 20px;
+    align-items: center;
+  }
+  
+  h1{
+    margin-bottom: 10px;
+    text-align: center;
+
+  }
+
+  h2{
+    margin-bottom: 10px;
+  }
+  
+  html {    
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 10px;
+    padding: 0 2px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    background: #d5dff4;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #d5dff4;
+    color: rgb(0, 0, 0);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+    
+button {
+  border:none;
+  font-family: Verdana, sans-serif;
+  margin-top:auto;
+  padding:10px;
+  width:26%;
+  font-weight:600;
+  border-radius:5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  color: #000000;
+  background:#9f01ea 90%;
+  cursor: pointer;
+  transition: transform 0.25s ease;  
+} 
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+.footer{ width:1350px; float:left; padding:10px 0px; background:#333;}
+.footer-parts{ width:30%; padding:10px 30px; float:left;}
+.footer-parts-h3{ font-size:25px; font-weight:600; color:#b48c36 ; padding:10px 0px;}
+.footer-parts-p{ color:#000; line-height:25px; text-align:justify; color:#FFF;}
+.footer-bottom{ width:1325px; float:left; padding:5px; text-align:center; color:#FFF; font-size:15px; background:#000;}
+
+
