@@ -154,8 +154,8 @@ router.get("/dhruvin", async (req, res) => {
 		// 	email: decodeToken.email,
 		// });
 		// console.log("-------->>", user);
-		const user = "dhruvin here!";
-		res.status(200).json({ user });
+		const Dhruvin = "Heyyy meri Jaan! I LOVE YOU!😋😊🤗";
+		res.status(200).json({ Dhruvin });
 	} catch (error) {
 		console.error(error);
 		res.status(500).json({ message: "An error occurred..." + error });
