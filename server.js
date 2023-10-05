@@ -22,8 +22,8 @@ app.use(cors(corsOptions)); // Use this after the variable declaration
 
 mongoose
 	.connect(
-		// "mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/myapp?retryWrites=true&w=majority",
-		"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/",
+		"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/myapp?retryWrites=true&w=majority",
+		// "mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/",
 	)
 	.then(() => {
 		console.log("Connected to MongoDB");
@@ -37,6 +37,8 @@ app.use(express.json());
 app.use("/auth", authRoutes);
 app.use("/recipes", recipeRoutes);
 
-app.listen(9000, () => {
-	console.log("Server is running on port 9000");
+const port = `0.0.0.0`;
+
+app.listen(port, () => {
+	console.log(`Server is running on ${port}`);
 });
