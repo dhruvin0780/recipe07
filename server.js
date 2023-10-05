@@ -22,7 +22,7 @@ app.use(cors(corsOptions)); // Use this after the variable declaration
 
 mongoose
 	.connect(
-		"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/?retryWrites=true&w=majority",
+		"mongodb+srv://dhruvin07botify:hVnocblNCXUNjsiO@myapp.vywczer.mongodb.net/myapp?retryWrites=true&w=majority",
 	)
 	.then(() => {
 		console.log("Connected to MongoDB");
